@@ -66,6 +66,7 @@ This is the **backend** of the Contact Management Application, built using **Nod
 }
 #### 1. data base schemaa :
 ```
+json
 database schema = {
   firstName: String,
   lastName: String,
