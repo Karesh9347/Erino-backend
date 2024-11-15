@@ -1,6 +1,6 @@
 # Contact Management App - Backend
 
-This is the **backend** of the Contact Management Application, built using **Node.js** with **Express** and **MongoDB**. It provides the API endpoints for managing contacts (add, remove, update, view) and supports CRUD operations. 
+This is the **backend** of the Contact Management Application, built using **Node.js** with **Express** and **MongoDB**. It provides the API endpoints for managing contacts (add, remove, update, view) and supports CRUD operations.
 
 ### Features:
 - **Add Contact**: API endpoint to add a new contact.
@@ -49,28 +49,28 @@ This is the **backend** of the Contact Management Application, built using **Nod
 ### API Endpoints:
 
 - **GET** `/all-contacts`: Fetch all contacts.
-- **POST** `/add-ontact`: Add a new contact.
+- **POST** `/add-contact`: Add a new contact.
 - **PUT** `/update-contact/:email`: Update a contact by email.
-- **DELETE** `/remove-contact/:emai`: Delete a contact by email.
+- **DELETE** `/remove-contact/:email`: Delete a contact by email.
 
 ### Example API Requests:
 
 #### 1. Add a Contact (POST `/add-contact`):
 ```json
 {
-  "name": "John Doe",
+  "firstName": "John",
+  "lastName": "Doe",
   "email": "john.doe@example.com",
-  "phone": "1234567890"
-"company":"erino",
-"job title":"sde"
-}```
-#### 1. data base schemaa :
-```json
-database schema = {
-  firstName: String,
-  lastName: String,
-  email: String,
-  phoneNumber: String,
-  company: String,
-  jobTitle: String
-};```
+  "phoneNumber": "1234567890",
+  "company": "Erino",
+  "jobTitle": "SDE"
+}
+databse schema
+const contactSchema = {
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  phoneNumber: { type: String, required: true, unique: true },
+  company: { type: String, required: true },
+  jobTitle: { type: String, required: true }
+};
