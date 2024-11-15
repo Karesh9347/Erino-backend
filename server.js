@@ -1,7 +1,7 @@
 //import require libraries
 const express=require("express")
 const app=express()
-const dotenv=require("dotenv")
+
 const mongoose=require("mongoose")
 const Contact=require("./contactSchema")
 const addContact=require("./addContact")
