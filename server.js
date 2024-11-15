@@ -11,7 +11,7 @@ const updateHelper=require("./updateHelper")
 const updateContact=require("./updateContact")
 const cors=require("cors")
 app.use(cors())
-dotenv.config()
+
 app.use(express.json())
 //mongod connection using mongoose library
 const MONGO_URI = 'mongodb+srv://naresh9848:Karesh9848@cluster1.94mleuj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
