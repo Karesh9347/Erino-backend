@@ -65,7 +65,7 @@ This is the **backend** of the Contact Management Application, built using **Nod
 "job title":"sde"
 }
 #### 1. data base schemaa :
-json
+```json
 database schema = {
   firstName: String,
   lastName: String,
@@ -73,4 +73,4 @@ database schema = {
   phoneNumber: String,
   company: String,
   jobTitle: String
-};
+};```
